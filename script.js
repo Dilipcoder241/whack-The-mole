@@ -3,6 +3,7 @@ let timelefth2 = document.getElementById('timeleft');
 let start = document.getElementById('start');
 let pause = document.getElementById('pause');
 let square = document.querySelectorAll('.square')
+let heading = document.getElementsByClassName('heading')[0];
 randPosi = null;
 let score = 0;
 let timeleft = 60;
@@ -38,6 +39,9 @@ function timing(){
         start.style.display = 'inline';
         pause.style.display = 'none';
         gameaudio.pause();
+        heading.innerHTML = 'GAME OVER';
+
+
     }
 }
 
@@ -46,6 +50,7 @@ function startTheGame(){
     timeleft = 60;
     gameaudio.play();
 
+    heading.innerHTML = 'Whack The Mole';
     scoreh2.innerHTML = 'your score is 0';
 
     pause.innerHTML = 'pause';
