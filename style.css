@@ -83,14 +83,16 @@ h2{
 
 
     #score{
+        font-size: 1rem;
         position: absolute;
         top: 12px;
         left: 12px;
         color: black;
         margin: 0;
     }
-
+    
     #timeleft{
+        font-size: 1rem;
         position: absolute;
         top: 12px;
         right: 12px;
@@ -101,6 +103,10 @@ h2{
     .game{
         height: 271px;
         width: 296px;
+    }
+
+    .btn{
+        padding: 0.5rem 1rem;
     }
     
 
